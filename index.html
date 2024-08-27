@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncriptadorDAPR</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header"></header>
+
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <h1 class="presentacion__contenido__titulo">Encriptador <strong class="destacarTitulo">de texto</strong> </h1>
+            <textarea class="caja__de__texto" id="textoUsuario" maxlength="150" rows="5" cols="40" placeholder="Escribe tu texto aquí..." ></textarea>
+            <p class = "alerta__botones"> ! Solo letras minúsculas y sin acentos, max 150 caracteres. </p>
+            <div class="botones">
+                <button onclick="encriptarYRedireccionar();" class="apariencia__boton" >Encriptar</button>
+                    
+                <button onclick="desencriptar();" class="apariencia__boton" >Desencriptar</button>
+            
+            </div>
+        </section>
+
+        <section class="lupa">
+            <img src="/assets/lupa.png" alt="lupa" class="mi__imagen">
+            <h1>Ningún mensaje fue encontrado</h1>
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+        </section>
+    </main>
+    <footer class="pie__de__pagina">
+        <p>Desarrollado por Denisse Ponce Riveros</p>
+    </footer>
+    
+    <script src="app.js" defer></script>
+</body>
+</html>
